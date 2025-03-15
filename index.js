@@ -1,5 +1,5 @@
 // Code your solution in this file!
-unction distanceFromHqInBlocks(pickupLocation) {
+function distanceFromHqInBlocks(pickupLocation) {
     
     return Math.abs(pickupLocation - 42);
 
