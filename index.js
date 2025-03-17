@@ -24,3 +24,38 @@ console.log(distanceFromHqInFeet(pickupLocation));    // Output: 2112
 let startBlock = 34;
 let destinationBlock = 38;
 console.log(distanceTravelledInFeet(startBlock, destinationBlock))
+
+
+function calculatesFarePrice(start, destination) {
+
+  const dist = Math.abs(destination - start);
+
+    
+  
+  if (dist <= 400){
+
+     return("The Price is free");
+
+
+  }
+
+  else if (dist >400 && dist<=2000){
+
+     
+       return('Your price is $'+ (dist-400)*0.02);
+
+  }
+
+  else if (dist>2000 && dist<=2500){
+
+   return("your price is $25");
+
+  }
+
+  else{
+
+   return("cannot travel that far");
+  }
+
+
+  }
